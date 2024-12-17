@@ -1,0 +1,8 @@
+#menuButton {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+#menuContent {
+  display: none;
+}

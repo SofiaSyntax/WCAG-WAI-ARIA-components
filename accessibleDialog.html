@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Dialog</title>
+</head>
+<body>
+
+ <!-- Tillängligt modalfönster med <dialog> Skapa en tillgänglig
+    modal med hjälp av det inbyggda HTML-elementet <dialog>. Vilka 
+    är fördelarna med att använda denna i tillgänglighets-synpunkt? 
+   
+    
+    Det finns flera fördelar med arr använda <dialog> elementet.
+        Dels förhindrar det oavsiktlig interaktion utanför dialogen.
+        När dialogrutan är öppen hålls användaren inom fönstret, vilket
+        förhindrar att de oavsiktligt interagerar med andra delar av sidan.
+        Detta är särskilt viktigt för användare som navigerar med tagentbordet.
+
+        Det underlättar för personer med nedsatt syn att orientera sig på sidan.
+        Eftersom <dialog> är semantiskt korrekt, förstår skärmläsare att det är ett
+        dialogfönster och meddelar användaren om detta. Detta innebär att användaren
+        förstår att de har en dialogruta öppen, till skillnad från om man istället 
+        använder en div. -->
+
+    <button id="openDialogBtn">Öppna modalfönster</button>
+    <div id="overlay"></div>
+
+    <dialog id="accessibleDialog">
+        <h2>Exempel på tillgängligt modalfönster med &lt;dialog&gt;</h2>
+        <p>Här är innehållet i modalfönstret.</p>
+        <button id="closeDialogBtn">Stäng</button>
+      </dialog>
+
+
+    <script src="accessibleDialog.js"></script>
+</body>
+</html>

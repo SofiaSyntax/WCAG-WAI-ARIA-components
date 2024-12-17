@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hamburgerMenu.css">
+    <title>Accessible Hamburger Menu</title>
+</head>
+<body>
+
+    <button id="menuButton" aria-controls="menuContent" aria-expanded="false">Meny</button>
+
+      <!-- Navigation -->
+  <nav id="menuContent" aria-hidden="true">
+    <ul>
+      <li><a href="#">Hem</a></li>
+      <li><a href="#">Om oss</a></li>
+      <li><a href="#">Tjänster</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </nav>
+
+
+    <script src="hamburgerMenu.js"></script>
+</body>
+</html>

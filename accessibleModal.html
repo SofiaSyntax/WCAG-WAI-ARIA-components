@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accessibleModal.css">
+    <title>Accessible Modal</title>
+</head>
+<body>
+    <button id="openModalBtn">Öppna modalfönster</button>
+    <div id="overlay"></div>
+
+    <div id="accessibleModal" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Exempel på modalfönster</h2>
+        <p>Här är lite text i modalfönstret.</p>
+        <button id="closeModalBtn">Stäng</button>
+      </div>
+
+
+    <script src="accessibleModal.js"></script>
+</body>
+</html>
